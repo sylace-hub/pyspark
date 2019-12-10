@@ -19,3 +19,9 @@ open("MSC.schema", "w").write(open('MSC.columns', 'r').read().replace('\n', ' St
 
 schema = open('/data/msc/MSC.schema', 'r').read()
 ```
+
+df_msc = spark.read.option('delimiter',';').schema(schema).csv('/data/msc/HUA_DWH-081019-200000.csv')
+
+calling_NB = df_msc.select('CALLINGNUMBER')
+
+CNB_NN = calling_NB.where(calling_NB.CALLINGNUMBER.isNotNull())
