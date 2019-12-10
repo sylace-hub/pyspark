@@ -12,7 +12,7 @@ Load a file of vertical column names and retrieves a schema with string type<br>
 <sub><sup>([:-1] is a dirty hack to remove the last added coma)</sub></sup>
 
 ```python
-schema = open('MSC.columns', 'r').read().replace('\n', ' STRING,')[:-1]
+schema = open('/data/msc/MSC.columns', 'r').read().replace('\n', ' STRING,')[:-1]
 
 #write to schema file
 open("MSC.schema", "w").write(open('MSC.columns', 'r').read().replace('\n', ' String,')[:-1])
