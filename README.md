@@ -13,6 +13,7 @@ pyspark --packages io.delta:delta-core_2.11:0.4.0
 ```
 
 #### schema from file
+
 - Load a file of vertical column names 
 - Retrieves a schema with string type<br>
 <sub><sup>([:-1] is a dirty hack to remove the last added coma)</sub></sup>
@@ -51,7 +52,7 @@ run = lambda filename : exec(open(filename).read())
 run('filename.py')
 ```
 
-#### 
+#### add a custom module to python
 
 ```python
 >>> import sys
@@ -59,6 +60,7 @@ run('filename.py')
 ['', '/usr/local/bin', '/usr/lib64/python36.zip', '/usr/lib64/python3.6', '/usr/lib64/python3.6/lib-dynload', '/usr/lo
 cal/lib64/python3.6/site-packages', '/usr/local/lib/python3.6/site-packages', '/usr/lib64/python3.6/site-packages', '/
 usr/lib/python3.6/site-packages']
+```
 
 ```shell
 [root@ingest:/code/lib/py]# vim hello.py
