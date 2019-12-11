@@ -25,3 +25,12 @@ df_msc = spark.read.option('delimiter',';').schema(schema).csv('/data/msc/HUA_DW
 calling_NB = df_msc.select('CALLINGNUMBER')
 
 CNB_NN = calling_NB.where(calling_NB.CALLINGNUMBER.isNotNull())
+
+Using pyspark with bpython
+
+```python
+from pyspark import SparkContext
+sc = SparkContext("local", "app")
+from pyspark.sql import SQLContext
+spark = SQLContext(sc)
+```
