@@ -35,6 +35,12 @@ df_msc = spark.read.option('delimiter',';').schema(schema).csv('/data/msc/HUA_DW
 calling_NB = df_msc.select('CALLINGNUMBER')
 
 CNB_NN = calling_NB.where(calling_NB.CALLINGNUMBER.isNotNull())
+
+```
+#### Using repartition to write to a single file
+
+```python
+NumDF.where(NumDF.A_NUMBER.isNull()).repartition(1).write.csv('/data/output/A_NUMBER_NULL.csv')
 ```
 
 #### Using pyspark with bpython
