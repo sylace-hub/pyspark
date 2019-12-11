@@ -82,9 +82,19 @@ usr/lib/python3.6/site-packages']
 ~/.pythonhist
 ```
 
-#### execure a script from python shell 
+#### execute a script from python shell 
 (import * is the trick to import variables inline, in the same scope as the interpreter)
 
 ```python
 from spark_etl_name import *
+```
+
+#### Display Local Variables 
+
+for item in list(locals()): print(item)
+
+
+#### Display Local Variables
+```python
+DF = DF.select([F.col(i).alias(i.upper()) for i in DF.columns])
 ```
