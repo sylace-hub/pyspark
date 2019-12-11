@@ -89,12 +89,12 @@ usr/lib/python3.6/site-packages']
 from spark_etl_name import *
 ```
 
-#### Display Local Variables 
+#### Display Local Variables in Python Shell
 
 for item in list(locals()): print(item)
 
 
-#### Display Local Variables
+#### Capitalize Dataframe Columns
 ```python
 DF = DF.select([F.col(i).alias(i.upper()) for i in DF.columns])
 ```
