@@ -81,3 +81,10 @@ usr/lib/python3.6/site-packages']
 ```shell
 ~/.pythonhist
 ```
+
+#### execure a script from shell 
+(import * is the trick to import variables inline, in the same scope as the interpreter)
+
+```python
+from spark_etl_name import *
+```
