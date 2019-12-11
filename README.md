@@ -43,3 +43,10 @@ sc = SparkContext("local", "app")
 from pyspark.sql import SQLContext
 spark = SQLContext(sc)
 ```
+
+#### Run a file from Py Shell
+
+```python
+run = lambda filename : exec(open(filename).read())
+run('filename.py')
+```
