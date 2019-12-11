@@ -27,7 +27,7 @@ open("MSC.schema", "w").write(open('MSC.columns', 'r').read().replace('\n', ' St
 schema = open('/data/msc/MSC.schema', 'r').read()
 schema = open('/data/output/TRANSACTION.schema', 'r').read()
 ```
-#### load MSC Dataframe
+#### Load MSC Dataframe
 
 ```python
 df_msc = spark.read.option('delimiter',';').schema(schema).csv('/data/msc/HUA_DWH-081019-200000.csv')
@@ -82,7 +82,7 @@ usr/lib/python3.6/site-packages']
 ~/.pythonhist
 ```
 
-#### execure a script from shell 
+#### execure a script from python shell 
 (import * is the trick to import variables inline, in the same scope as the interpreter)
 
 ```python
