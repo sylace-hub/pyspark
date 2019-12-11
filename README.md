@@ -25,6 +25,7 @@ schema = open('/data/msc/MSC.columns', 'r').read().replace('\n', ' STRING,')[:-1
 open("MSC.schema", "w").write(open('MSC.columns', 'r').read().replace('\n', ' String,')[:-1])
 
 schema = open('/data/msc/MSC.schema', 'r').read()
+schema = open('/data/output/TRANSACTION.schema', 'r').read()
 ```
 #### load MSC Dataframe
 
