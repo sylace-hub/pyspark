@@ -50,3 +50,21 @@ spark = SQLContext(sc)
 run = lambda filename : exec(open(filename).read())
 run('filename.py')
 ```
+
+#### 
+
+```python
+>>> import sys
+>>> print(sys.path)
+['', '/usr/local/bin', '/usr/lib64/python36.zip', '/usr/lib64/python3.6', '/usr/lib64/python3.6/lib-dynload', '/usr/lo
+cal/lib64/python3.6/site-packages', '/usr/local/lib/python3.6/site-packages', '/usr/lib64/python3.6/site-packages', '/
+usr/lib/python3.6/site-packages']
+
+```shell
+[root@ingest:/code/lib/py]# vim hello.py
+
+[root@ingest:/usr/local/lib/python3.6/site-packages]# vim my-paths.pth
+/code/lib/py
+```
+
+```
