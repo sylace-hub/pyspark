@@ -76,4 +76,8 @@ usr/lib/python3.6/site-packages']
 /code/lib/py
 ```
 
+#### bpython history
+
+```shell
+~/.pythonhist
 ```
