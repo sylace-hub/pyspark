@@ -90,6 +90,10 @@ from spark_etl_name import *
 ```
 
 #### Display Local Variables in Python Shell
+```shell
+cat .pythonhist
+```
+
 ```python
 for item in list(locals()): print(item)
 ```
